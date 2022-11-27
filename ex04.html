@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 04</title>
+</head>
+
+<body>
+    <script>
+        /*    Uma revendedora de carros usados paga a seus funcionários
+    vendedores um salário fixo por mês, mais uma comissão também
+    fixa para cada carro vendido e mais 5% do valor das vendas por ele
+    efetuadas. Escrever um algoritmo que leia o número de carros por
+    ele vendidos, o valor total de suas vendas, o salário fixo e o valor que
+    
+    ele recebe por carro vendido. Calcule e escreva o salário final do
+    vendedor.*/
+
+
+
+
+
+        const fixSalary = parseInt(prompt('Digite o valor fixo que o vendedor recebe: '))
+        const fixComission = parseInt(prompt('Digite o valor fixo de comissão que o vendedor recebe por carro vendido : '))
+        const numCarros = parseInt(prompt('Numero de carros vendidos'))
+        const ValorTotVendido = parseInt(prompt('Digite o valor total em reais vendidos: '))
+
+        const salarioFinal = fixSalary + (fixComission * numCarros) + (ValorTotVendido * 0.05)
+
+
+        document.write(`O valor Final do salário do funcionário é: R$${salarioFinal}`)
+
+
+
+    </script>
+</body>
+
+</html>
